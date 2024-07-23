@@ -14,12 +14,12 @@ import { store } from "./store";
 import { login as loginHandle, logout as logoutHandle } from "./store/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAS75wwvuVbuDfuhx7XCfjUEylrNGBB0_o",
-  authDomain: "new-project-53a62.firebaseapp.com",
-  projectId: "new-project-53a62",
-  storageBucket: "new-project-53a62.appspot.com",
-  messagingSenderId: "878228741772",
-  appId: "1:878228741772:web:2b65c1b83dcc663e34e5a9",
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_ID,
 };
 
 const app = initializeApp(firebaseConfig);
